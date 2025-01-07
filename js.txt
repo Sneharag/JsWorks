@@ -1,0 +1,6 @@
+Everything in javascript is objects
+
+    String
+    Array
+    function.....
+
