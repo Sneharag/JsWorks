@@ -1,0 +1,7 @@
+
+function handleClick(){
+
+    alert("Clicked")
+
+}
+

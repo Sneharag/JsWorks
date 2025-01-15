@@ -1,0 +1,21 @@
+                React
+               --------
+
+frontend user interfaces javascript library
+componant based structure
+
+componant - block of code
+
+
+eg:   Header.jsx
+
+    function Header(){
+
+        return(
+            <div>
+
+            </div>
+        )
+    }
+    export defualt Header
+

@@ -4,3 +4,121 @@ Everything in javascript is objects
     Array
     function.....
 
+
+arrayMethods
+
+    push()
+    pop()
+    unshift()
+    shift()
+    includes()
+    map()
+    reduce()
+    filter()
+    find()
+
+
+
+to covert an object to Array
+
+    Object.entries(objectname)
+
+
+DOM - Document Object Model
+
+    interface that helps to add or remove contents in DOM tree
+
+    DOM tree - that treats HTML documents as tree like structure
+
+    var document={
+
+        attributes-
+            textContent
+
+        methods-
+            getElementsByTagName() => select elements using tagname
+            getElementById() => select element by id
+            getElementsByClassName() => select elements by classname
+            querySelector() => can perform all elements using queryselect
+            querySelectorAll() => append (id-#, class-.) infront 
+            createElement()
+            appendChild()
+            .
+            .
+            .
+            .
+    }
+    eg:var headings=document.getElementsByTagName("h1")
+
+    [...]- spread operator => to convert to array in DOM
+    eg: [...headings]
+
+    eg: elements.style.color="blue"
+    
+        elements.textContent="Document Object Model" => to change the contents
+
+
+
+Synchronous and asynchronous
+-----------------------------
+
+synchronous-keep order and supports single threading
+
+asynchronous-keep no order and supports multithreading
+
+javascript is synchronous but behaviours as aynchronous with the help of webapi
+
+jsEngine - runtime Environment
+
+jsEngine + webapi = node
+
+jsEngine        webapi(timedelay functions handling/asynchronous activity)
+--------       --------
+callStack      setTimeOut()
+memoryheap     setTimeInterval()
+compiler       DOM events
+interpreter    fetch()
+               xmlhttp
+
+callstack - functions that has no time delay will come to callstack and after its exec it will pop out of the callstack
+
+callbackqueue - after time delay the functions in webapi will send to callStack
+
+eventloop - checks the callstack is empty
+
+
+            api call 
+            ---------
+
+xmlhttp()
+fetch()
+axios
+
+fetch() - it returns a promise object
+   
+   promise - container for storing future value
+
+            1)resolve - to handle resolve state, then() is used
+            2)reject - to handle reject state, catch() is used
+
+   to convert to js native type - json()
+
+
+to avoid promise chaining
+use async and await
+
+async - append to a function that returns a promise
+await - append to a function that wait to return a promise
+
+js packages
+-----------
+
+to recognise a folder as package - npm init
+
+in js to import a function we need to export function
+
+export-   use export keyword in the beginnning of function 
+
+          use export default functionName - one function only
+
+import-  import {functionName} from "packagename"
